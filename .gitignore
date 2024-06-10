@@ -129,6 +129,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+ML_2024
 
 # Spyder project settings
 .spyderproject
