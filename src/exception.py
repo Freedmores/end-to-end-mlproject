@@ -1,5 +1,5 @@
 import sys
-
+from src.logger import logging
 
 def error_message_detail(error, error_detail: sys):
     _, _, exc_tb = error_detail.exc_info()
@@ -25,4 +25,5 @@ if __name__ == "__main__":
         # some code that raises an exception
         raise ValueError("An example error")
     except ValueError as e:
+        logging.info('An example error')
         raise CustomException(e, sys)
